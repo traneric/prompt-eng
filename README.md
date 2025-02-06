@@ -1,31 +1,14 @@
 
 
-# Prompt Engineering Lessons
+# Prompt Engineering Lab
 
-Prompt engineering is a rapidly growing discipline focused on developing and optimizing prompts to maximize the effectiveness of language models (LMs) across various applications and research fields. This site serves as a comprehensive guide designed to help students, researchers, and developers master prompt engineering through theory, practical exercises, and hands-on experience using Python code and Jupyter notebooks.
+The Prompt Engineering Lab serves as an Education and Experimentation Hub provided by The Generative Intelligence Lab @ FAU. Prompt Engineering is a rapidly evolving discipline at the intersection of Artificial Intelligence and Natural Language Processing. This lab is designed to help students, researchers, and developers experiment with the art of creating and refining prompts, offering easy-to-follow resources and opportunities to contribute, collaborate, and share their work.
 
-We provide:
+Prompt Engineering has emerged as a critical component in unlocking the full potential of language models such as GPT, LLaMA, and Qwen. As AI systems continue to revolutionize problem-solving, mastering how to guide and optimize these models through effective prompting techniques is essential for cutting-edge research, practical applications, and future innovation.
 
-* **Techniques and Methods**: Master key prompting techniques, including zero-shot, few-shot, chain-of-thought, and self-consistency prompting.
-* **Model-Specific Customization**: Learn how to create effective prompts tailored for different models such as Llama, Phi, Qwen and others.
-* **Hands-on Experience**: experiement with different Prompt Experience Techniques through Jupyter notebook and Python code.
+This lab provides a hands-on learning environment where participants can actively apply their knowledge through Python code, Jupyter notebooks, and practical exercises designed to foster both experimentation and discovery.
 
-# Configure your Enviroment
-
-Our exercises can be executed from Jupyter Notebooks that you can setup in different ways:
-* **use your computer**, e.g. using [Visual Studio Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) or [installing Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
-* **use [MyBinder.org](http://mybinder.org)**: we provide links to Binder Notebooks in every exercise
-
-To install on your computer, you first have to clone the code from Github:
-
-```bash
-git clone https://github.com/GenILab-FAU/prompt-eng.git prompt-eng
-```
-
-In any case you need to adjust the CONFIGURATION file:
-
-[prompt-eng/config](./prompt-eng/config)
-
+Note: first, you need to [Configure your Lab Enviroment](./CONFIG.md)
 
 # Prompt Engineering Techniques
 
@@ -34,6 +17,9 @@ In any case you need to adjust the CONFIGURATION file:
 * [Prompt Template](prompt-eng/prompt_template.ipynb)
 * [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
 
-# References
+
+## References
 
 * [Meta How-To Guides: Prompting](https://www.llama.com/docs/how-to-guides/prompting/)
+
+
