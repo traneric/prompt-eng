@@ -17,6 +17,8 @@ Note: first, you need to [Configure your Lab Enviroment](./CONFIG.md)
 * [Few-Shot](prompt-eng/few_shot.ipynb)
 * [Prompt Template](prompt-eng/prompt_template.ipynb)
 * [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
+* (more to come)
+
 
 
 ## References
