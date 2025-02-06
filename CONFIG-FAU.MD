@@ -1,3 +1,5 @@
+![GenI-Banner](./images/geni-banner.png)
+
 # Configure your Lab Enviroment with CHAT@FAU
 
 **This is for Florida Atlantic University students only.**

@@ -1,3 +1,4 @@
+![GenI-Banner](./images/geni-banner.png)
 
 
 # Prompt Engineering Lab

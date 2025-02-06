@@ -1,3 +1,5 @@
+![GenI-Banner](./images/geni-banner.png)
+
 # Configure your Lab Enviroment
 
 ## Model Server
