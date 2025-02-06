@@ -11,8 +11,9 @@ The alternative way for FAU students is to [Config Chat@FAU](./CONFIG-FAU.md)
 Then you adjust your `prompt-eng/config` file as
 
 ```bash
-# this is file: prompt-eng/config
-URL=http://localhost:11434/api/generate
+
+URL_GENERATE=http://OLLAMA_SERVER_IP:11434/api/generate
+
 ```
 
 Note: if you install OLLAMA server on anoher computer, remeber to make it listen to all network devices to be able to access remotely:
