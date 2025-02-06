@@ -22,8 +22,9 @@ To install on your computer, you first have to clone the code from Github:
 git clone https://github.com/GenILab-FAU/prompt-eng.git prompt-eng
 ```
 
-In both case (your computer of using MyBinder) you have to configure the 
+In any case you need to adjust the CONFIGURATION file:
 
+[prompt-eng/config](./prompt-eng/config)
 
 
 # Prompt Engineering Techniques

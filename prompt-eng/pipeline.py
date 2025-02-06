@@ -30,7 +30,7 @@ def model_req(payload):
     try:
         load_config()
     except:
-        return 0, f"!!ERROR!! Problem loading CONFIG"
+        return -1, f"!!ERROR!! Problem loading CONFIG"
 
     url = os.getenv('URL', None)
     api_key = os.getenv('API_KEY', None)
@@ -46,12 +46,12 @@ def model_req(payload):
         response = requests.post(url, data=json.dumps(payload), headers=headers)
         delta = time.time() - start_time
     except:
-        result = f"!!ERROR!! Request failed! Have you setup the URL and API_KEY properly ({url})?"
+        return -1, f"!!ERROR!! Request failed! You need to adjust prompt-eng/config with URL and API_KEY ({url})?"
 
     # Checking the response and extracting the 'response' field
     if response and response.status_code == 200:
-        result = response.json().get('response', 'No response field found')
+        return round(delta,3), response.json().get('response', 'No response field found')
     elif response:
-        result = f"!!ERROR!! HTTP Response={response.status_code}, {response.text}"
+        return -1, f"!!ERROR!! HTTP Response={response.status_code}, {response.text}"
     
-    return round(delta,3), result
+    return -1, f"!!ERROR!! It should not have gotten here!"
