@@ -1,0 +1,7 @@
+# Point to the target Ollama or Open-WebUI Server
+# !!! YOU NEED TO ADJUST THE URL TO YOUR SERVER !!!
+# !!! IF USING OPEN-WEBUI, PROVIDE TEH API_KEY !!!
+
+URL=http://minipc:11434/api/generate
+#URL=https://chat.hpc.fau.edu/api/chat/completions
+#API_KEY=None
