@@ -8,9 +8,9 @@ def load_config():
     Load config file looking into multiple locations
     """
     config_locations = [
-        "./.config",
-        "prompt-eng/.config",
-        "../.config"
+        "./_config",
+        "prompt-eng/_config",
+        "../_config"
     ]
     
     # Find CONFIG
@@ -71,7 +71,7 @@ def model_req(payload=None):
     try:
         load_config()
     except:
-        return -1, f"!!ERROR!! Problem loading prompt-eng/.config"
+        return -1, f"!!ERROR!! Problem loading prompt-eng/_config"
 
     url = os.getenv('URL_GENERATE', None)
     api_key = os.getenv('API_KEY', None)

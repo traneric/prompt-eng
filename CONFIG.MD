@@ -8,7 +8,7 @@ The alternative way for FAU students is to [Config Chat@FAU](./CONFIG-FAU.md)
 
 ### Ollama Server
 
-Then you adjust your `prompt-eng/.config` file as
+Then you adjust your `prompt-eng/_config` file as
 
 ```bash
 
@@ -46,7 +46,7 @@ python -m pip install --break-system-packages -r requirements.txt
 
 In any case you need to **adjust the CONFIGURATION file**:
 
-[prompt-eng/.config](./prompt-eng/.config.example)
+[prompt-eng/_config](./prompt-eng/_config.example)
 
 Once executing, you will be able to duplicate the exemples being provided by modifying the configuration in three easy points:
 
