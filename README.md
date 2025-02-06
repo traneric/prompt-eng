@@ -20,7 +20,12 @@ Note: first, you need to [Configure your Lab Enviroment](./CONFIG.md)
 
 
 ## References
+ 
+* [Meta - Prompting Guide](https://www.llama.com/docs/how-to-guides/prompting/)
+* [OpenAI Prompting Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
+* [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md)
+* [Open WebUI Endpoints](https://docs.openwebui.com/getting-started/api-endpoints/)
 
-* [Meta How-To Guides: Prompting](https://www.llama.com/docs/how-to-guides/prompting/)
+
 
 
