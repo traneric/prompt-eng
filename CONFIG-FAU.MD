@@ -9,7 +9,7 @@ At FAU, we have our [OLLAMA](http://www.ollama.com)  configure through a Open-We
 
 [http://fau.hpc.fau.edu](http://fau.hpc.fau.edu)
 
-To use this Ollama Server, you must generate and configure the API_KEY into `prompt-eng/config` file as
+To use this Ollama Server, you must generate and configure the API_KEY into `prompt-eng/.config` file as
 
 ```bash
 # this is file: prompt-eng/config

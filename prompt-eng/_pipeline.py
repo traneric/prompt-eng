@@ -8,9 +8,9 @@ def load_config():
     Load config file looking into multiple locations
     """
     config_locations = [
-        "./config",
-        "prompt-eng/config",
-        "../config"
+        "./.config",
+        "prompt-eng/.config",
+        "../.config"
     ]
     
     # Find CONFIG
@@ -50,6 +50,10 @@ def create_payload(model, prompt, target="ollama", **kwargs):
             "model": model,
             "messages": [ {"role" : "user", "content": prompt } ]
         }
+
+        ## @NOTE: Need to load parameters for Open-WebUI payload
+        ###
+        
         #if kwargs:
         #    payload["options"] = {key: value for key, value in kwargs.items()}
     
@@ -67,7 +71,7 @@ def model_req(payload=None):
     try:
         load_config()
     except:
-        return -1, f"!!ERROR!! Problem loading CONFIG"
+        return -1, f"!!ERROR!! Problem loading prompt-eng/.config"
 
     url = os.getenv('URL_GENERATE', None)
     api_key = os.getenv('API_KEY', None)
