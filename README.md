@@ -9,7 +9,7 @@ Prompt Engineering has emerged as a critical component in unlocking the full pot
 
 This lab provides a hands-on learning environment where participants can actively apply their knowledge through Python code, Jupyter notebooks, and practical exercises designed to foster both experimentation and discovery.
 
-Note: first, you need to [Configure your Lab Enviroment](./CONFIG.md)
+Note: first, you need to [Configure your Lab Enviroment](CONFIG.md)
 
 # Prompt Engineering Techniques
 
