@@ -1,3 +1,29 @@
+##
+## Prompt Engineering Lab
+## Platform for Education and Experimentation with Prompt NEngineering in Generative Intelligent Systems
+## _pipeline.py :: Simulated GenAI Pipeline 
+## 
+#  
+# Copyright (c) 2024 Dr. Fernando Koch, The Generative Intelligence Lab @ FAU
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights 
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# Documentation and Getting Started:
+#    https://github.com/GenILab-FAU/prompt-eng
+#
+# Disclaimer: 
+# Generative AI has been used extensively while developing this package.
+# 
+
+
 import requests
 import json
 import os
@@ -34,10 +60,15 @@ def load_config():
 
 def create_payload(model, prompt, target="ollama", **kwargs):
     """
+    Create the Request Payload in the format required byt the Model Server
     @NOTE: 
     Need to adjust here to support multiple target formats
     target can be only ('ollama' or 'open-webui')
+
+    @TODO it should be able to self_discover the target Model Server
+    [Issue 1](https://github.com/genilab-fau/prompt-eng/issues/1)
     """
+
     payload = None
     if target == "ollama":
         payload = {
@@ -49,6 +80,10 @@ def create_payload(model, prompt, target="ollama", **kwargs):
             payload["options"] = {key: value for key, value in kwargs.items()}
 
     elif target == "open-webui":
+        '''
+        @TODO need to verify the forma for 'parameters' for 'open-webui' is correct.
+        [Issue 2](https://github.com/genilab-fau/prompt-eng/issues/2)
+        '''
         payload = {
             "model": model,
             "messages": [ {"role" : "user", "content": prompt } ]
@@ -63,7 +98,7 @@ def create_payload(model, prompt, target="ollama", **kwargs):
 
 def model_req(payload=None):
     """
-    COMPLETE
+    Issue request to the Model Server
     """
         
     # CUT-SHORT Condition

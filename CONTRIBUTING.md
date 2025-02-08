@@ -15,7 +15,7 @@ To start contributing, follow the instructions in the `How to Configure the Lab 
 > **Note:** For FAU students, please use CANVAS to submit assignments when applicable.
 
 
-# 🚨 **Immediate Help Needed!** 🚨
+# 🚨 Immediate Help 🚨
 
 **Update** the ready-to-go techniques with relevant examples in Requirement Analysis:  
 > *Note: The current templates contain placeholder examples involving math tests.*
