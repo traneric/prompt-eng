@@ -10,6 +10,8 @@ We welcome contributions to this project in form of:
 
 Please use Issues or email to reach out to talk about new ideas, or submit your code or report.
 
+To start contributing, follow the instruction on `How to Configure the Lab Enviroment` in [README.md](./README.md).
+
 (Note: for FAU students, plese use CANVAS to submit the Assignment, when applicable.)
 
 
