@@ -24,7 +24,7 @@ Note: first, you need to **Configure your Lab Environment**:
 * [Meta Prompting](prompt-eng/meta.ipynb)
 * [Self Consistency](prompt-eng/self_consistency.ipynb)
 * ...
-* (more to come; check [Contributing](#contributing))
+* (more to come; check [Contributing](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONTRIBUTING.md)
 
 # Experimenting
 
@@ -61,16 +61,6 @@ payload = create_payload(target="ollama",
                          num_ctx=100, 
                          num_predict=100)
 ```
-
-
-# Contributing
-
-Ideas for new techniques and research explorations, and how to contribute to this project at:
-
-[List of Research Ideas](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONTRIBUTING.md)
-
-
-Once executing, you will be able to duplicate the examples being provided by modifying the configuration in three easy points:
 
 
 ## References
