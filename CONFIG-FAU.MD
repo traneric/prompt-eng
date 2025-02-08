@@ -50,13 +50,13 @@ For that, you will need to:
 
 At FAU, we have our shared OLLAMA Server that can be accessed through an Open-WebUI interface at:
 
-[http://fau.hpc.fau.edu](http://fau.hpc.fau.edu)
+[https://chat.hpc.fau.edu](https://chat.hpc.fau.edu)
 
 To use this service for our setup, you must generate and configure the API_KEY.
 
 #### Finding **YOUR_API_KEY_HERE** 
 
-1. Go to [http://fau.hpc.fau.edu](http://fau.hpc.fau.edu)
+1. Go to [https://chat.hpc.fau.edu](https://chat.hpc.fau.edu)
 2. After login with your @fau account, go to `Your Account` (top-left)
 
 ![Your Account](./images/chatfau-login.png)
