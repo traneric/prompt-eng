@@ -1,45 +1,45 @@
 ![GenI-Banner](https://github.com/genilab-fau/genial-fau.github.io/blob/8f1a2d3523f879e1082918c7bba19553cb6e7212/images/geni-lab-banner.png?raw=true)
 
-
 # Contributing
 
-We welcome contributions to this project in form of:
-* Complete missing code
-* Experiments with Prompt Engineering Techniques 
-* Research Reports. 
+We welcome contributions to this project in the form of:
+* Immediate Help Needed: completing missing code
+* Experimenting with Prompt Engineering Techniques 
+* Contribuing to Research
+* Contributing to the Core Code
+  
+Please use Issues or email to discuss new ideas, submit your code, or share your report.
 
-Please use Issues or email to reach out to talk about new ideas, or submit your code or report.
+To start contributing, follow the instructions in the `How to Configure the Lab Environment` section of [README.md](./README.md).
 
-To start contributing, follow the instruction on `How to Configure the Lab Environment` in [README.md](./README.md).
-
-(Note: for FAU students, please use CANVAS to submit the Assignment, when applicable.)
+> **Note:** For FAU students, please use CANVAS to submit assignments when applicable.
 
 
-# !!! Immediate Help !!!
+# 🚨 **Immediate Help Needed!** 🚨
 
-**Update** the ready-to-go techniques with examples in Requirement Analysis 
-> Note: these templates have phony examples around math tests
+**Update** the ready-to-go techniques with relevant examples in Requirement Analysis:  
+> *Note: The current templates contain placeholder examples involving math tests.*
 
 * Update [Zero Shot](prompt-eng/zero_shot.ipynb)
 * Update [Few Shot](prompt-eng/few_shots.ipynb)
 * Update [Prompt Template](prompt-eng/prompt_template.ipynb)
 * Update [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
 
-**Complete** desirable techniques:
+**Complete** these desirable techniques:
 
 * Complete [Meta Prompting](prompt-eng/meta.ipynb)
 * Complete [Self Consistency](prompt-eng/self_consistency.ipynb)
 
-**Create** missing entries:
-> Note: I suggest to copy&paste prompt-eng/zero_shot.ipynb and use as template, adjusting the code
+**Create** missing entries:  
+> *Tip: You can copy and paste the template from `prompt-eng/zero_shot.ipynb` and adjust the code accordingly.*
 
 * Create **Generate Knowledge Prompting** (`prompt-eng/generate_knowledge.ipynb`)
 * Create **Prompt Chaining** (`prompt-eng/prompt_chaining.ipynb`)
-* Create **Retrieval Augmented Generation** (`prompt-eng/rag.ipynb`)
+* Create **Retrieval-Augmented Generation (RAG)** (`prompt-eng/rag.ipynb`)
 
-**Research** about the possibility to create these other techniques:
+**Research** the potential of creating the following techniques:
 * Automatic Reasoning
-* Automatic Prompt Engineer
+* Automatic Prompt Engineering
 * Active-Prompt
 * Directional Stimulus Prompting
 * Program-Aided Language Models
@@ -47,42 +47,38 @@ To start contributing, follow the instruction on `How to Configure the Lab Envir
 * Reflexion
 
 
-# Experiments with Prompt Engineering Techniques 
+# Experimenting with Prompt Engineering Techniques
 
-This is a List of Ideas on possible research and experiments with Prompt Engineering Techniques that we would like to incorporate to the Prompt Engineering Lab.
+Here’s a list of ideas for research and experiments with Prompt Engineering techniques that we would like to incorporate into the lab:
 
-1. Experimenting with different Prompt Templates applied to Use Cases to to attain best accuracy.
-1. Improving or completing the code for the Prompt Engineering Technique to support new Use Cases
-1. Creating a new code for other Prompt Engineering Technique 
-1. Experiments with combinations of Automated Prompt Generation in a chained process
-1. Experiments with combinations of Prompt Engineering Technique, Automated Prompt Generation, and variation of Model Parameters, to identify best performance both for latency and accuracy.
+1. Experimenting with different prompt templates across use cases to achieve the highest accuracy.
+2. Enhancing or completing existing code for Prompt Engineering techniques to support new use cases.
+3. Developing new code for additional Prompt Engineering techniques.
+4. Conducting experiments with combinations of automated prompt generation in a chained process.
+5. Testing combinations of Prompt Engineering techniques, automated prompt generation, and model parameter variations to determine the best balance between latency and accuracy.
 
 ### Outcomes
 
-* **Good Code** and **Good Use Cases** will be invited to integrate the new related of the Prompt Engineering Lab
+* **High-quality code** and **well-defined use cases** will be considered for integration into the Prompt Engineering Lab.
 
 
 # Contributing to Research
 
-If you would like to contribute with a Research Report describing the results of your exploration, please use the template provided at:
-
+If you’d like to contribute a research report describing the results of your exploration, please use the template provided here:  
 [Research Report Template](./MY-REPORT.md)
 
 ### Outcomes 
 
-* **Good Research Reports** will be invited to extend and internal publication
-* **Exceptional Research Reports** will be invited to extend and external publication in a venue to be defined! The reports include:
-    * Experiments to generate data to support comparative analysis between method, techniques, and variations of parameters.
-    * Good visualization e.g. diagrams and graphs presenting the experiments and results. 
+* **High-quality research reports** may be invited for inclusion in internal publications.  
+* **Exceptional research reports** could be expanded for submission to external publications or conferences. Reports should include:
+    * Experiments that generate data to support comparative analyses of different methods, techniques, and parameter variations.
+    * Clear visual representations, such as diagrams and graphs, that effectively communicate experimental processes and results.
 
 
-# Contributing to the CORE Code
+# Contributing to the Core Code
 
 This is an experimental and educational project. As such, we are "building it as we fly it," and issues or deficiencies within the CORE Code are expected.
 
 Please check the [ISSUES](https://github.com/genilab-fau/prompt-eng/issues) section for known problems where you can contribute. If you discover an issue, comment on that thread to be assigned.
 
-If you have an Enhancement Request or an Idea for Improvement, please reach out through [ISSUES](https://github.com/genilab-fau/prompt-eng/issues). You can either create a [NEW ISSUE](https://github.com/genilab-fau/prompt-eng/issues) or contact us via email.
-
-
-
+If you have an enhancement request or an idea for improvement, please reach out through [ISSUES](https://github.com/genilab-fau/prompt-eng/issues). You can either create a [NEW ISSUE](https://github.com/genilab-fau/prompt-eng/issues) or contact us via email.
