@@ -9,14 +9,14 @@ If you ARE NOT a FAU student, go to
 
 The configuration requires:
 * the **Prompt Engineering Lab**, which provides the simulated GenAI pipeline, and;
-* a **Model Server**, whcih for FAU students can be either a locally installed **Ollama Server** OR use [chat.hpc.fau.edu](chat.hpc.fau.edu).
+* a **Model Server**, whcih for FAU students can be either a locally installed **Ollama Server** OR use [chat.hpc.fau.edu](https://chat.hpc.fau.edu).
 
 You have a more options (than the general public) for this configuration:
 
 * (Option 1): Install both **Prompt Engineering Lab** and **OLLAMA Server** on the same computer (RECOMMENDED)
 * (Option 2): Install **Prompt Engineering Lab** on one computer and use the **OLLAMA Server** installed on other computer in the same network (or accessible through the Internet, if feasible)
-* (Option 3): Install **Prompt Engineering Lab** on your computer and integrate to [chat.hpc.fau.edu](chat.hpc.fau.edu).(SECOND BEST)
-* (Option 4): Execute the **Prompt Engineering Lab** through [MyBinder.org](http://mybinder.org)**, using the links to Binder Notebooks in every exercise and integrate to [chat.hpc.fau.edu](chat.hpc.fau.edu).(SECOND BEST)
+* (Option 3): Install **Prompt Engineering Lab** on your computer and integrate to [chat.hpc.fau.edu](https://chat.hpc.fau.edu).(SECOND BEST)
+* (Option 4): Execute the **Prompt Engineering Lab** through [MyBinder.org](http://mybinder.org)**, using the links to Binder Notebooks in every exercise and integrate to [chat.hpc.fau.edu](https://chat.hpc.fau.edu).(SECOND BEST)
 
 We recommend using [Visual Code Studio](https://code.visualstudio.com) and installing everything on your computer.
 
@@ -26,7 +26,7 @@ For (Option 1) and (Option 2) follow the same instructions as in [Configure Lab 
 
 For (Option 3) and (Option 4), the installing steps include:
 * (Step 1) Downloading **Prompt Engineering Lab** on your computer
-* (Step 2) Connecting the **Prompt Engineering Lab** to [chat.hpc.fau.edu](chat.hpc.fau.edu).
+* (Step 2) Connecting the **Prompt Engineering Lab** to [chat.hpc.fau.edu](https://chat.hpc.fau.edu).
 * (Step 3) Test the Environment
 
 
@@ -39,10 +39,10 @@ Please follow those instructions!
 
 # (Step 2) Connecting the **Prompt Engineering Lab** to chat.hpc.fau.edu
 
-You need to configure the Environment so that the **Prompt Engineering Lab** connected to your Model Server at [chat.hpc.fau.edu](chat.hpc.fau.edu).
+You need to configure the Environment so that the **Prompt Engineering Lab** connected to your Model Server at [chat.hpc.fau.edu](https://chat.hpc.fau.edu).
 
 For that, you will need to:
-* (Step 2.a) Collect the API_KEY from [chat.hpc.fau.edu](chat.hpc.fau.edu)
+* (Step 2.a) Collect the API_KEY from [chat.hpc.fau.edu](https://chat.hpc.fau.edu)
 * (Step 2.b) Setup the `prompt_eng/_config` file
 
 
