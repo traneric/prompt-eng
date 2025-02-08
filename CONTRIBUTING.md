@@ -15,7 +15,14 @@ Please use Issues or email to reach out to talk about new ideas, or submit your 
 
 # !!! Immediate Help Needed !!!
 
-Complete TODO entries:
+Update the ready-to-go techniques with examples in Requirement Analysis (they have phony examples around math tests):
+
+* Update [Zeo Shot](prompt_eng/zero_shot.ipynb)
+* Update [Few Shot](prompt_eng/few_shot.ipynb)
+* Update [Prompt Template](prompt_eng/prompt_template.ipynb)
+* Update [Chain-of-Thought](prompt_eng/chain_of_thought.ipynb)
+
+Complete desirable techniques:
 
 * Complete [Meta Prompting](prompt_eng/meta.ipynb)
 * Complete [Self Consistency](prompt_eng/self_consistency.ipynb)
