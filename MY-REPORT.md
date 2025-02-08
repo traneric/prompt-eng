@@ -8,13 +8,13 @@
 This is a response to the Assignment part of the COURSE.
 -->
 
-* Authors: [NAME1](http://www.YOURPAGE.xxx), [NAME2](http://www.YOURPAGE.xxx), ..., [NAME_n](http://www.YOURPAGE.xxx)
+* Authors: [NAME1](http://www.YOURPAGE.xxx), [NAME_n](http://www.YOURPAGE.xxx)
 * Academic Supervisor: [Dr. Fernando Koch](http://www.fernandokoch.me)
 
   
 # Research Question 
 
-1-liner descrition of your request (or exploration).. Make it enthusiastical!
+1-liner description of your request (or exploration).. Make it enthusiastically!
 
 ## Arguments
 
