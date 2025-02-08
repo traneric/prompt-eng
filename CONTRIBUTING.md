@@ -15,7 +15,7 @@ To start contributing, follow the instruction on `How to Configure the Lab Envir
 (Note: for FAU students, please use CANVAS to submit the Assignment, when applicable.)
 
 
-# !!! Immediate Help Needed !!!
+# !!! Immediate Help !!!
 
 **Update** the ready-to-go techniques with examples in Requirement Analysis 
 > Note: these templates have phony examples around math tests
@@ -62,12 +62,11 @@ This is a List of Ideas on possible research and experiments with Prompt Enginee
 * **Good Code** and **Good Use Cases** will be invited to integrate the new related of the Prompt Engineering Lab
 
 
-# Contributing with Research Reports
+# Contributing to Research
 
 If you would like to contribute with a Research Report describing the results of your exploration, please use the template provided at:
 
 [Research Report Template](./MY-REPORT.md)
-
 
 ### Outcomes 
 
@@ -77,7 +76,13 @@ If you would like to contribute with a Research Report describing the results of
     * Good visualization e.g. diagrams and graphs presenting the experiments and results. 
 
 
+# Contributing to the CORE Code
 
+This is an experimental and educational project. As such, we are "building it as we fly it," and issues or deficiencies within the CORE Code are expected.
+
+Please check the [ISSUES](https://github.com/genilab-fau/prompt-eng/issues) section for known problems where you can contribute. If you discover an issue, comment on that thread to be assigned.
+
+If you have an Enhancement Request or an Idea for Improvement, please reach out through [ISSUES](https://github.com/genilab-fau/prompt-eng/issues). You can either create a [NEW ISSUE](https://github.com/genilab-fau/prompt-eng/issues) or contact us via email.
 
 
 
