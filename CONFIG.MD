@@ -1,44 +1,111 @@
 ![GenI-Banner](./images/geni-banner.png)
 
-# Configure your Lab Enviroment
 
-## Model Server
 
-The simplest way to experiment with this Prompt Engineering Lab is to have [OLLAMA](http://www.ollama.com) installed on localhost or some accessible network point.
+# Configuring the Prompt Engineering Lab
 
-The alternative way for FAU students is to [Config Chat@FAU](./CONFIG-FAU.md)
+> If you are a FAU student, go to 
+> [Configure Lab Enviroment for FAU Students](https://github.com/genilab-fau/prompt-eng/CONFIG-FAU.md)
+> 
 
-### Ollama Server
 
-Then you adjust your `prompt-eng/_config` file as
+The configuration requires:
+* the **Prompt Engineeting Lab**, which provides the simulated GenAI pipeline, and;
+* Ollama Server as the server for GenAI models.
+
+You have a few options for this configuration:
+
+* (Option 1): Install both **Prompt Engineeting Lab** and **OLLAMA Server** on the same computer (RECOMMENDED)
+* (Option 2): Install **Prompt Engineeting Lab** on one computer and use the **OLLAMA Server** installed on other computer in the same network (or accessible through the Internet, if feasible)
+
+
+We recommend using [Visual Code Studio](https://code.visualstudio.com) and installing everything on your computer.
+
+For both options, the installation steps include:
+* (Step 1) Bringing up **Ollama Server**
+* (Step 2) Downloading **Prompt Engineeting Lab** on your computer
+* (Step 3) Connecting the **Prompt Engineeting Lab** with the **Ollama Server**
+* (Step 4) Test the enviroment
+
+
+
+# (Step 1) Bringing up Ollama Server
+
+Download and install OLLAMA following the instrutions at:
+
+[OLLAMA Download](https://ollama.com/download)
+
+Detailed installation instructions at:
+
+[OLLAMA Installation](https://github.com/ollama/ollama)
+
+Once downloaded and installed, you can install GenAI models as:
 
 ```bash
 
-URL_GENERATE=http://OLLAMA_SERVER_IP:11434/api/generate
+ollama pull llama3.2
 
 ```
 
-Note: if you install OLLAMA server on anoher computer, remeber to make it listen to all network devices to be able to access remotely:
+The list of models avaialble are at:
+
+[OLLAMA Model Library](https://ollama.com/library)
+
+You can check the list of models installed in your computer as:
+
+
+```bash
+
+ollama ps
+
+```
+
+You can start OLLAMA Server to being able to access the models from the **Prompt Engineeting Lab** as:
+
+```bash
+
+ollama server
+
+```
+
+Note: if you install OLLAMA server on another computer, you need to make it listen to all network devices so you can access from the **Prompt Engineeting Lab** :
+
 
 ```bash
 export OLLAMA_HOST=0.0.0.0
 ollama server
 ```
 
-## Lab Enviroment
 
-Our exercises can be executed from Jupyter Notebooks that you can setup in different ways:
-* **use your computer**, e.g. using [Visual Studio Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) or [installing Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
-* **use [MyBinder.org](http://mybinder.org)**: we provide links to Binder Notebooks in every exercise
+At this point, OLLAMA is up and running and serving requests through port 11434.
+
+> Note: If there is a `bind port error`  while initializing OLLAMA server, `check if the service is already running`, for instance:
 
 
-To install on your computer, you first have to clone the code from Github:
-
-```bash
-git clone https://github.com/GenILab-FAU/prompt-eng.git prompt-eng
+```bash 
+curl http://localhost:11434/api/ps
 ```
 
-If installing locally, remember to make sure you have the dependencies installed:
+
+If you have issue making OLLAMA to work, check [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/TROUBLESHOOTING.md)
+
+
+
+
+# (Step 2) Downloading **Prompt Engineeting Lab** on your computer
+
+
+Just clone the **Prompt Engineeting Lab** into your computer using:
+
+```bash
+
+git clone https://github.com/genilab-fau/prompt-eng.git prompt-eng
+
+```
+
+This will create the folder ./prompt-eng with the code and instructions inside it.
+
+Next, you need to install the `requirements.txt`:
 
 ```bash
 
@@ -46,40 +113,57 @@ python -m pip install --break-system-packages -r requirements.txt
 
 ```
 
-In any case you need to **adjust the CONFIGURATION file**:
+# (Step 3) Connecting the **Prompt Engineeting Lab** with the **Ollama Server**
 
-[prompt-eng/_config](./prompt-eng/_config.example)
 
-Once executing, you will be able to duplicate the exemples being provided by modifying the configuration in three easy points:
+Finally, you need to configure the enviroment so that the **Prompt Engineeting Lab** connected to your Model Server (Ollama).
 
-* **(1) Change the Simulated inbounding message**
+You need to create the configuration file `_config` with the following parameters (a template is available; `just rename _config.example to _config`)
 
-```python
 
-MESSAGE = "What is 2 * log(10)?"
+```bash
 
-```
-
-* **(2) Adjust the Prompt Engineering Technique to be applied**
-
-```python
-
-TEMPLATE_BEFORE = "Act like you are a math teacher\nYour student is asking:"
-TEMPLATE_AFTER = "Give only the answer; refrain from any more information"
-PROMPT = TEMPLATE_BEFORE + '\n' + MESSAGE + '\n' + TEMPLATE_AFTER
+# This is an example for _config when Ollama is running on the same computer
+URL_GENERATE=http://localhost:11434/api/generate
 
 ```
 
-* **(3) Configure your payload (optional)**
+```bash
 
-Documentation about [available parameters](https://github.com/ollama/ollama/blob/main/docs/api.md).
+# This is an example for _config when Ollama is running on other computer
+URL_GENERATE=http://OTHER_COMPUTER_IP:11434/api/generate
 
-```python
-
-payload = create_payload(model="llama3.2", 
-                         prompt=PROMPT, 
-                         temperature=1.0, 
-                         num_ctx=100, 
-                         num_predict=100)
 ```
+
+Note: if you install OLLAMA server on anoter computer, remeber to make it listen to all network devices to be able to access remotely:
+
+```bash
+export OLLAMA_HOST=0.0.0.0
+ollama server
+```
+
+# (Step 4) Test the Enviroment
+
+
+* Test if the `_pipeline` is connecting to your OLLAMA server:
+
+```bash
+
+python prompt-eng/_pipeline.py
+
+```
+
+
+If all goes well:
+
+
+```bash
+
+$ python3 prompt-eng/_pipeline.py
+1 + 1 = 2
+Time taken: 3.111s
+
+```
+
+If you are having problems, check [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/TROUBLESHOOTING.md)
 

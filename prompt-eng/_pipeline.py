@@ -122,12 +122,12 @@ def model_req(payload=None):
 ###
 
 if __name__ == "__main__":
-    from pipeline import create_payload, model_req
+    from _pipeline import create_payload, model_req
     MESSAGE = "1 + 1"
     PROMPT = MESSAGE 
     payload = create_payload(
-                         target="open-webui",   
-                         model="phi4:latest", 
+                         target="ollama",   
+                         model="llama3.2:latest", 
                          prompt=PROMPT, 
                          temperature=1.0, 
                          num_ctx=100, 

@@ -1,0 +1,104 @@
+![GenI-Banner](./images/geni-banner.png)
+
+
+# Troubleshooting 
+
+This is the list of Frequenly Asked Issues while installing and configuring the Prompt Engieering Lab in your computer. 
+
+If your issues is not included in this list EITHER:
+* report through our Class Server on DISCORD (COT6930_S25), using channel #dev-support, OR;
+* open an [Issue in the main Github Repo](https://github.com/genilab-fau/prompt-eng/issues)
+
+
+## Frequently Asked Issues
+
+
+### ERROR: Problem loading prompt-eng/_config
+
+```bash
+$ python3 prompt-eng/_pipeline.py
+!!ERROR!! Problem loading prompt-eng/_config
+Time taken: -1s
+```
+
+You have not configured the file `_config` as explained in [Configure Lab Enviroment](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
+
+```bash
+
+cat prompt-eng/_config
+
+```
+
+It should look like:
+
+```bash
+
+# This is an example for _config when Ollama is running on the same computer
+URL_GENERATE=http://localhost:11434/api/generate
+
+```
+
+### ERROR: Request failed! You need to adjust prompt-eng/config with URL ...
+
+```bash
+$ python3 prompt-eng/_pipeline.py
+!!ERROR!! Request failed! You need to adjust prompt-eng/config with URL(http://localhost:11434/api/generate)
+Time taken: -1s
+```
+
+The `URL_GENERATE _config` is not pointing to a running Ollama Server (or Ollama Serve is not running!)
+
+Check the explanation in [Configure Lab Enviroment](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
+
+You can test access to Ollama serve as (check if the URL matches what is in you `_config`):
+
+```bash 
+curl http://localhost:11434/api/ps
+```
+
+### ERROR: HTTP Response=404, model 'XXX' not found
+
+
+```bash
+$ python3 prompt-eng/_pipeline.py
+!!ERROR!! HTTP Response=404, {"error":"model 'phi4:latest' not found"}
+Time taken: -1s
+```
+
+This model is not installed on the OLLAMA Serve you are connecting.
+
+Check the list of installed moels as:
+
+```bash
+
+$ ollama ls
+
+```
+
+You can either install that model OR adjust the payload to connect to existing models:
+
+Install Ollama model:
+
+```bash
+
+ollama pull {model_name}
+
+```
+
+Edit _payload.py:
+
+```python
+
+    payload = create_payload(
+                         target="ollama",
+                         model="llama3.2:latest", 
+                         prompt=PROMPT, 
+                         temperature=1.0, 
+                         num_ctx=100, 
+                         num_predict=100)
+
+```
+
+
+
+
