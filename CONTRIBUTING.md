@@ -16,24 +16,24 @@ Please use Issues or email to reach out to talk about new ideas, or submit your 
 # !!! Immediate Help Needed !!!
 
 **Update** the ready-to-go techniques with examples in Requirement Analysis 
-> Note: these tempaltes have phony examples around math tests
+> Note: these templates have phony examples around math tests
 
-* Update [Zeo Shot](prompt_eng/zero_shot.ipynb)
-* Update [Few Shot](prompt_eng/few_shot.ipynb)
-* Update [Prompt Template](prompt_eng/prompt_template.ipynb)
-* Update [Chain-of-Thought](prompt_eng/chain_of_thought.ipynb)
+* Update [Zero Shot](prompt-eng/zero_shot.ipynb)
+* Update [Few Shot](prompt-eng/few_shot.ipynb)
+* Update [Prompt Template](prompt-eng/prompt_template.ipynb)
+* Update [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
 
 **Complete** desirable techniques:
 
-* Complete [Meta Prompting](prompt_eng/meta.ipynb)
-* Complete [Self Consistency](prompt_eng/self_consistency.ipynb)
+* Complete [Meta Prompting](prompt-eng/meta.ipynb)
+* Complete [Self Consistency](prompt-eng/self_consistency.ipynb)
 
 **Create** missing entries:
-> Note: I suggest to copy&paste prompt_eng/zero_shot.ipynb and use as template, adjusting the code
+> Note: I suggest to copy&paste prompt-eng/zero_shot.ipynb and use as template, adjusting the code
 
-* Create **Generate Knowledge Prompting** (`prompt_eng/generate_knowledge.ipynb`)
-* Create **Prompt Chaining** (`prompt_eng/prompt_chaining.ipynb`)
-* Create **Retrieval Augmented Generation** (`prompt_eng/rag.ipynb`)
+* Create **Generate Knowledge Prompting** (`prompt-eng/generate_knowledge.ipynb`)
+* Create **Prompt Chaining** (`prompt-eng/prompt_chaining.ipynb`)
+* Create **Retrieval Augmented Generation** (`prompt-eng/rag.ipynb`)
 
 **Research** about the possiblity to create these other techniques:
 * Automatic Reasoning
