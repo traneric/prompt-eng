@@ -4,43 +4,43 @@
 # Configuring the Prompt Engineering Lab for FAU students
 
 > If you ARE NOT a FAU student, go to 
-> [Configure Lab Enviroment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
+> [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
 > 
 
 
 The configuration requires:
-* the **Prompt Engineeting Lab**, which provides the simulated GenAI pipeline, and;
-* a **Model Server**, whcih for FAU studetns can be either a locally installed **Ollama Server** OR use [chat.fau.hpc.edu](chat.fau.hpc.edu).
+* the **Prompt Engineering Lab**, which provides the simulated GenAI pipeline, and;
+* a **Model Server**, whcih for FAU students can be either a locally installed **Ollama Server** OR use [chat.fau.hpc.edu](chat.fau.hpc.edu).
 
 You have a more options (than the general public) for this configuration:
 
-* (Option 1): Install both **Prompt Engineeting Lab** and **OLLAMA Server** on the same computer (RECOMMENDED)
-* (Option 2): Install **Prompt Engineeting Lab** on one computer and use the **OLLAMA Server** installed on other computer in the same network (or accessible through the Internet, if feasible)
-* (Option 3): Install **Prompt Engineeting Lab** on your computer and integrate to [chat.fau.hpc.edu](chat.fau.hpc.edu).(SECOND BEST)
-* (Option 4): Execute the **Prompt Engineeting Lab** through [MyBinder.org](http://mybinder.org)**, using the links to Binder Notebooks in every exercise and integrate to [chat.fau.hpc.edu](chat.fau.hpc.edu).(SECOND BEST)
+* (Option 1): Install both **Prompt Engineering Lab** and **OLLAMA Server** on the same computer (RECOMMENDED)
+* (Option 2): Install **Prompt Engineering Lab** on one computer and use the **OLLAMA Server** installed on other computer in the same network (or accessible through the Internet, if feasible)
+* (Option 3): Install **Prompt Engineering Lab** on your computer and integrate to [chat.fau.hpc.edu](chat.fau.hpc.edu).(SECOND BEST)
+* (Option 4): Execute the **Prompt Engineering Lab** through [MyBinder.org](http://mybinder.org)**, using the links to Binder Notebooks in every exercise and integrate to [chat.fau.hpc.edu](chat.fau.hpc.edu).(SECOND BEST)
 
 We recommend using [Visual Code Studio](https://code.visualstudio.com) and installing everything on your computer.
 
-For (Option 1) and (Option 2) follow the same instructions as in [Configure Lab Enviroment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
+For (Option 1) and (Option 2) follow the same instructions as in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
 
 
 
 For (Option 3) and (Option 4), the installing steps include:
-* (Step 1) Downloading **Prompt Engineeting Lab** on your computer
-* (Step 2) Connecting the **Prompt Engineeting Lab** to [chat.fau.hpc.edu](chat.fau.hpc.edu).
-* (Step 3) Test the enviroment
+* (Step 1) Downloading **Prompt Engineering Lab** on your computer
+* (Step 2) Connecting the **Prompt Engineering Lab** to [chat.fau.hpc.edu](chat.fau.hpc.edu).
+* (Step 3) Test the Environment
 
 
 
-# (Step 1) Downloading **Prompt Engineeting Lab** on your computer
+# (Step 1) Downloading **Prompt Engineering Lab** on your computer
 
-This is the same as (Step 2) in [Configure Lab Enviroment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md).
+This is the same as (Step 2) in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md).
 
 Please follow those instructions!
 
-# (Step 2) Connecting the **Prompt Engineeting Lab** to chat.fau.hpc.edu
+# (Step 2) Connecting the **Prompt Engineering Lab** to chat.fau.hpc.edu
 
-You need to configure the enviroment so that the **Prompt Engineeting Lab** connected to your Model Server at [chat.fau.hpc.edu](chat.fau.hpc.edu).
+You need to configure the Environment so that the **Prompt Engineering Lab** connected to your Model Server at [chat.fau.hpc.edu](chat.fau.hpc.edu).
 
 For that, you will need to:
 * (Step 2.a) Collect the API_KEY from [chat.fau.hpc.edu](chat.fau.hpc.edu)
@@ -87,7 +87,7 @@ API_KEY=YOUR_API_KEY_HERE
 
 ```
 
-# (Step 3) Test the Enviroment
+# (Step 3) Test the Environment
 
 
 To test the connection, you need to adjust the debug code in `prompt_eng/_pipeline` for the right TARGET and MODEL:

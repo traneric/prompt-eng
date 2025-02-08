@@ -10,9 +10,9 @@ We welcome contributions to this project in form of:
 
 Please use Issues or email to reach out to talk about new ideas, or submit your code or report.
 
-To start contributing, follow the instruction on `How to Configure the Lab Enviroment` in [README.md](./README.md).
+To start contributing, follow the instruction on `How to Configure the Lab Environment` in [README.md](./README.md).
 
-(Note: for FAU students, plese use CANVAS to submit the Assignment, when applicable.)
+(Note: for FAU students, please use CANVAS to submit the Assignment, when applicable.)
 
 
 # !!! Immediate Help Needed !!!
@@ -37,7 +37,7 @@ To start contributing, follow the instruction on `How to Configure the Lab Envir
 * Create **Prompt Chaining** (`prompt-eng/prompt_chaining.ipynb`)
 * Create **Retrieval Augmented Generation** (`prompt-eng/rag.ipynb`)
 
-**Research** about the possiblity to create these other techniques:
+**Research** about the possibility to create these other techniques:
 * Automatic Reasoning
 * Automatic Prompt Engineer
 * Active-Prompt
@@ -64,7 +64,7 @@ This is a List of Ideas on possible research and experiments with Prompt Enginee
 
 # Contributing with Research Reports
 
-If you would like to contribute with a Research Report describing the resutls of your exploration, please use the template provided at:
+If you would like to contribute with a Research Report describing the results of your exploration, please use the template provided at:
 
 [Research Report Template](./MY-REPORT.md)
 

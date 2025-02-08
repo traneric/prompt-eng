@@ -5,33 +5,33 @@
 # Configuring the Prompt Engineering Lab
 
 > If you are a FAU student, go to 
-> [Configure Lab Enviroment for FAU Students](https://github.com/genilab-fau/prompt-eng/CONFIG-FAU.md)
+> [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/CONFIG-FAU.md)
 > 
 
 
 The configuration requires:
-* the **Prompt Engineeting Lab**, which provides the simulated GenAI pipeline, and;
+* the **Prompt Engineering Lab**, which provides the simulated GenAI pipeline, and;
 * Ollama Server as the server for GenAI models.
 
 You have a few options for this configuration:
 
-* (Option 1): Install both **Prompt Engineeting Lab** and **OLLAMA Server** on the same computer (RECOMMENDED)
-* (Option 2): Install **Prompt Engineeting Lab** on one computer and use the **OLLAMA Server** installed on other computer in the same network (or accessible through the Internet, if feasible)
+* (Option 1): Install both **Prompt Engineering Lab** and **OLLAMA Server** on the same computer (RECOMMENDED)
+* (Option 2): Install **Prompt Engineering Lab** on one computer and use the **OLLAMA Server** installed on other computer in the same network (or accessible through the Internet, if feasible)
 
 
 We recommend using [Visual Code Studio](https://code.visualstudio.com) and installing everything on your computer.
 
 For both options, the installation steps include:
 * (Step 1) Bringing up **Ollama Server**
-* (Step 2) Downloading **Prompt Engineeting Lab** on your computer
-* (Step 3) Connecting the **Prompt Engineeting Lab** with the **Ollama Server**
-* (Step 4) Test the enviroment
+* (Step 2) Downloading **Prompt Engineering Lab** on your computer
+* (Step 3) Connecting the **Prompt Engineering Lab** with the **Ollama Server**
+* (Step 4) Test the Environment
 
 
 
 # (Step 1) Bringing up Ollama Server
 
-Download and install OLLAMA following the instrutions at:
+Download and install OLLAMA following the instructions at:
 
 [OLLAMA Download](https://ollama.com/download)
 
@@ -47,7 +47,7 @@ ollama pull llama3.2
 
 ```
 
-The list of models avaialble are at:
+The list of models available are at:
 
 [OLLAMA Model Library](https://ollama.com/library)
 
@@ -60,7 +60,7 @@ ollama ps
 
 ```
 
-You can start OLLAMA Server to being able to access the models from the **Prompt Engineeting Lab** as:
+You can start OLLAMA Server to being able to access the models from the **Prompt Engineering Lab** as:
 
 ```bash
 
@@ -68,7 +68,7 @@ ollama server
 
 ```
 
-Note: if you install OLLAMA server on another computer, you need to make it listen to all network devices so you can access from the **Prompt Engineeting Lab** :
+Note: if you install OLLAMA server on another computer, you need to make it listen to all network devices so you can access from the **Prompt Engineering Lab** :
 
 
 ```bash
@@ -92,10 +92,10 @@ If you have issue making OLLAMA to work, check [Troubleshooting ](https://github
 
 
 
-# (Step 2) Downloading **Prompt Engineeting Lab** on your computer
+# (Step 2) Downloading **Prompt Engineering Lab** on your computer
 
 
-Just clone the **Prompt Engineeting Lab** into your computer using:
+Just clone the **Prompt Engineering Lab** into your computer using:
 
 ```bash
 
@@ -113,10 +113,10 @@ python -m pip install --break-system-packages -r requirements.txt
 
 ```
 
-# (Step 3) Connecting the **Prompt Engineeting Lab** with the **Ollama Server**
+# (Step 3) Connecting the **Prompt Engineering Lab** with the **Ollama Server**
 
 
-Finally, you need to configure the enviroment so that the **Prompt Engineeting Lab** connected to your Model Server (Ollama).
+Finally, you need to configure the environment so that the **Prompt Engineering Lab** connected to your Model Server (Ollama).
 
 You need to create the configuration file `_config` with the following parameters (a template is available; `just rename _config.example to _config`)
 
@@ -135,14 +135,14 @@ URL_GENERATE=http://OTHER_COMPUTER_IP:11434/api/generate
 
 ```
 
-Note: if you install OLLAMA server on anoter computer, remeber to make it listen to all network devices to be able to access remotely:
+Note: if you install OLLAMA server on another computer, remember to make it listen to all network devices to be able to access remotely:
 
 ```bash
 export OLLAMA_HOST=0.0.0.0
 ollama server
 ```
 
-# (Step 4) Test the Enviroment
+# (Step 4) Test the Environment
 
 
 * Test if the `_pipeline` is connecting to your OLLAMA server:

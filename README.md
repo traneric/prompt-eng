@@ -5,13 +5,13 @@
 
 The Prompt Engineering Lab serves as an Education and Experimentation Hub provided by The Generative Intelligence Lab @ FAU. Prompt Engineering is a rapidly evolving discipline at the intersection of Artificial Intelligence and Natural Language Processing. This lab is designed to help students, researchers, and developers experiment with the art of creating and refining prompts, offering easy-to-follow resources and opportunities to contribute, collaborate, and share their work.
 
-Prompt Engineering has emerged as a critical component in unlocking the full potential of language models such as GPT, LLaMA, and Qwen. As AI systems continue to revolutionize problem-solving, mastering how to guide and optimize these models through effective prompting techniques is essential for cutting-edge research, practical applications, and future innovation.
+Prompt Engineering has emerged as a critical component in unlocking the full potential of language models such as Phi, LLaMA, and Qwen. As AI systems continue to revolutionize problem-solving, mastering how to guide and optimize these models through effective prompting techniques is essential for cutting-edge research, practical applications, and future innovation.
 
 This lab provides a hands-on learning environment where participants can actively apply their knowledge through Python code, Jupyter notebooks, and practical exercises designed to foster both experimentation and discovery.
 
-Note: first, you need to **Configure your Lab Enviroment**:
-* [Configure Lab Enviroment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
-* [Configure Lab Enviroment for FAU Students](https://github.com/genilab-fau/prompt-eng/CONFIG-FAU.md)
+Note: first, you need to **Configure your Lab Environment**:
+* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/CONFIG.md)
+* [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/CONFIG-FAU.md)
 * [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/TROUBLESHOOTING.md)
 
 
@@ -28,7 +28,7 @@ Note: first, you need to **Configure your Lab Enviroment**:
 
 # Experimenting
 
-Once you have your installation completed (follow [Configure Lab Enviroment](https://github.com/genilab-fau/prompt-eng/CONFIG.md)), you can experiment with the out-of-the-box Prompt Engineering techniques being provided above OR create your own experiements by modifying the code in a few points (or creating new code).
+Once you have your installation completed (follow [Configure Lab Environment](https://github.com/genilab-fau/prompt-eng/CONFIG.md)), you can experiment with the out-of-the-box Prompt Engineering techniques being provided above OR create your own experiments by modifying the code in a few points (or creating new code).
 
 #### (1) Adjust the inbounding  Prompt, simulating inbounding requests from users or other systems
 
@@ -70,7 +70,7 @@ Ideas for new techiques and research explorations, and how to contribute to this
 [List of Research Ideas](https://github.com/genilab-fau/prompt-eng/CONTRIBUTING.md)
 
 
-Once executing, you will be able to duplicate the exemples being provided by modifying the configuration in three easy points:
+Once executing, you will be able to duplicate the examples being provided by modifying the configuration in three easy points:
 
 
 ## References
