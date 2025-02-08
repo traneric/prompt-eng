@@ -34,7 +34,9 @@ def load_config():
 
 def create_payload(model, prompt, target="ollama", **kwargs):
     """
-    @NOTE: Need to adjust here to support multiple target formats
+    @NOTE: 
+    Need to adjust here to support multiple target formats
+    target can be only ('ollama' or 'open-webui')
     """
     payload = None
     if target == "ollama":
@@ -45,20 +47,17 @@ def create_payload(model, prompt, target="ollama", **kwargs):
         }
         if kwargs:
             payload["options"] = {key: value for key, value in kwargs.items()}
+
     elif target == "open-webui":
         payload = {
             "model": model,
             "messages": [ {"role" : "user", "content": prompt } ]
         }
 
-        ## @NOTE: Need to load parameters for Open-WebUI payload
-        ###
-        
-        #if kwargs:
-        #    payload["options"] = {key: value for key, value in kwargs.items()}
+        payload.upload({key: value for key, value in kwargs.items()})
     
     else:
-        print(f'!!ERROR!! Unknown target type {target}')
+        print(f'!!ERROR!! Unknown target: {target}')
     return payload
 
 

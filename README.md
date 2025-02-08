@@ -1,4 +1,4 @@
-![GenI-Banner](./images/geni-banner.png)
+![GenI-Banner](https://github.com/genilab-fau/genial-fau.github.io/blob/8f1a2d3523f879e1082918c7bba19553cb6e7212/images/geni-lab-banner.png?raw=true)
 
 
 # Prompt Engineering Lab
@@ -21,14 +21,16 @@ Note: first, you need to **Configure your Lab Enviroment**:
 * [Few-Shot](prompt-eng/few_shot.ipynb)
 * [Prompt Template](prompt-eng/prompt_template.ipynb)
 * [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
-
+* [Meta Prompting](prompt-eng/meta.ipynb)
+* [Self Consistency](prompt-eng/self_consistency.ipynb)
+* ...
+* (more to come; check [Contributing](#contributing))
 
 # Experimenting
 
 Once you have your installation completed (follow [Configure Lab Enviroment](https://github.com/genilab-fau/prompt-eng/CONFIG.md)), you can experiment with the out-of-the-box Prompt Engineering techniques being provided above OR create your own experiements by modifying the code in a few points (or creating new code).
 
-#### (1) Adjusting the inbounding  the Prompt, simulating inbounding requests from users or other systems
-
+#### (1) Adjust the inbounding  Prompt, simulating inbounding requests from users or other systems
 
 ```python
 
@@ -46,13 +48,14 @@ PROMPT = TEMPLATE_BEFORE + '\n' + MESSAGE + '\n' + TEMPLATE_AFTER
 
 ```
 
-#### (2) Configure the Model request, simulating Workflow Orchestration
+#### (3) Configure the Model request, simulating Workflow Orchestration
 
 Documentation about [available parameters](https://github.com/ollama/ollama/blob/main/docs/api.md).
 
 ```python
 
-payload = create_payload(model="llama3.2", 
+payload = create_payload(target="ollama",
+                         model="llama3.2:latest", 
                          prompt=PROMPT, 
                          temperature=1.0, 
                          num_ctx=100, 

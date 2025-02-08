@@ -1,19 +1,17 @@
-![GenI-Banner](./images/geni-banner.png)
+![GenI-Banner](https://github.com/genilab-fau/genial-fau.github.io/blob/8f1a2d3523f879e1082918c7bba19553cb6e7212/images/geni-lab-banner.png?raw=true)
 
 
-# Troubleshooting 
+# Frequently Asked Issues
 
-This is the list of Frequenly Asked Issues while installing and configuring the Prompt Engieering Lab in your computer. 
+This is a (live) list of Frequenly Asked Issues while installing and configuring the Prompt Engieering Lab in your computer. 
 
 If your issues is not included in this list EITHER:
-* report through our Class Server on DISCORD (COT6930_S25), using channel #dev-support, OR;
+* report through our Class Server on DISCORD (COT6930_S25), using channel `#dev-support`, OR;
 * open an [Issue in the main Github Repo](https://github.com/genilab-fau/prompt-eng/issues)
 
 
-## Frequently Asked Issues
 
-
-### ERROR: Problem loading prompt-eng/_config
+## ERROR: Problem loading prompt-eng/_config
 
 ```bash
 $ python3 prompt-eng/_pipeline.py
@@ -38,7 +36,7 @@ URL_GENERATE=http://localhost:11434/api/generate
 
 ```
 
-### ERROR: Request failed! You need to adjust prompt-eng/config with URL ...
+## ERROR: Request failed! You need to adjust prompt-eng/config with URL ...
 
 ```bash
 $ python3 prompt-eng/_pipeline.py
@@ -56,7 +54,7 @@ You can test access to Ollama serve as (check if the URL matches what is in you 
 curl http://localhost:11434/api/ps
 ```
 
-### ERROR: HTTP Response=404, model 'XXX' not found
+## ERROR: HTTP Response=404, model 'XXX' not found
 
 
 ```bash
@@ -100,5 +98,26 @@ Edit _payload.py:
 ```
 
 
+## Response is Empty
 
+It seems to be working but the response if empty.
+
+This is likely because you are using the wrong `target` for the model request.
+
+`target` can be:
+* "ollama" if you are connecting to a Ollama Server installed on your computer
+* "open-webui" if you are connecting to [chat.fau.hpc.edu](chat.fau.hpc.edu).
+
+
+```python
+PROMPT = MESSAGE 
+
+# (3) Configure your payload (optional)
+# Documentation: https://github.com/ollama/ollama/blob/main/docs/api.md
+
+payload = create_payload(target="ollama", ## <-- CONFIGURE TARGET HERE
+                         model="llama3.2:latest", 
+                         prompt=PROMPT, 
+                         temperature=1.0,
+```
 

@@ -1,13 +1,40 @@
-![GenI-Banner](./images/geni-banner.png)
+![GenI-Banner](https://github.com/genilab-fau/genial-fau.github.io/blob/8f1a2d3523f879e1082918c7bba19553cb6e7212/images/geni-lab-banner.png?raw=true)
 
 
 # Contributing
 
-We welcome contribute to this project in form of Experiments with Prompt Engineering Techniques and Research Reports. 
+We welcome contributions to this project in form of:
+* Complete missing code
+* Experiments with Prompt Engineering Techniques 
+* Research Reports. 
 
 Please use Issues or email to reach out to talk about new ideas, or submit your code or report.
 
 (Note: for FAU students, plese use CANVAS to submit the Assignment, when applicable.)
+
+
+# !!! Immediate Help Needed !!!
+
+Complete TODO entries:
+
+* Complete [Meta Prompting](prompt_eng/meta.ipynb)
+* Complete [Self Consistency](prompt_eng/self_consistency.ipynb)
+
+Create missing entries:
+> Note: I suggest to copy&paste prompt_eng/zero_shot.ipynb and use as template, adjusting the code
+
+* Create **Generate Knowledge Prompting** (`prompt_eng/generate_knowledge.ipynb`)
+* Create **Prompt Chaining** (`prompt_eng/prompt_chaining.ipynb`)
+* Create **Retrieval Augmented Generation** (`prompt_eng/rag.ipynb`)
+
+Analyse the possiblity to create these other techniques:
+* Automatic Reasoning
+* Automatic Prompt Engineer
+* Active-Prompt
+* Directional Stimulus Prompting
+* Program-Aided Language Models
+* ReAct
+* Reflexion
 
 
 # Experiments with Prompt Engineering Techniques 
@@ -38,7 +65,6 @@ If you would like to contribute with a Research Report describing the resutls of
 * **Exceptional Research Reports** will be invited to extend and external publication in a venue to be defined! The reports include:
     * Experiments to generate data to support comparative analysis between method, techniques, and variations of parameters.
     * Good visualization e.g. diagrams and graphs presenting the experiments and results. 
-
 
 
 
