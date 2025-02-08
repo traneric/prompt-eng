@@ -4,9 +4,9 @@
 
 # Configuring the Prompt Engineering Lab
 
-> If you are a FAU student, go to 
-> [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/CONFIG-FAU.md)
-> 
+If you are a FAU student, go to 
+* [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG-FAU.MD)
+
 
 
 The configuration requires:
@@ -87,7 +87,7 @@ curl http://localhost:11434/api/ps
 ```
 
 
-If you have issue making OLLAMA to work, check [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/TROUBLESHOOTING.md)
+If you have issue making OLLAMA to work, check * [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/TROUBLESHOOTING.md)
 
 
 
@@ -165,5 +165,5 @@ Time taken: 3.111s
 
 ```
 
-If you are having problems, check [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/TROUBLESHOOTING.md)
+If you are having problems, check * [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/TROUBLESHOOTING.md)
 
