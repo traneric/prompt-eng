@@ -3,10 +3,10 @@
 # Contributing
 
 We welcome contributions to this project in the form of:
-* Immediate Help Needed: completing missing code
-* Experimenting with Prompt Engineering Techniques 
-* Contribuing to Research
-* Contributing to the Core Code
+* [Immediate Help Needed](#-immediate-help-needed-): completing missing code
+* [Experimenting with Prompt Engineering Techniques](#experimenting-with-prompt-engineering-techniques) 
+* [Contributing to Research](#contributing-to-research)
+* [Contributing to the Core Code](#contributing-to-the-core-code)
   
 Please use Issues or email to discuss new ideas, submit your code, or share your report.
 
