@@ -18,7 +18,7 @@ Note: first, you need to **Configure your Lab Environment**:
 # Prompt Engineering Techniques
 
 * [Zero-Shot](prompt-eng/zero_shot.ipynb)
-* [Few-Shot](prompt-eng/few_shot.ipynb)
+* [Few-Shot](prompt-eng/few_shots.ipynb)
 * [Prompt Template](prompt-eng/prompt_template.ipynb)
 * [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
 * [Meta Prompting](prompt-eng/meta.ipynb)
