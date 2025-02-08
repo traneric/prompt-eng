@@ -19,7 +19,7 @@ Please use Issues or email to reach out to talk about new ideas, or submit your 
 > Note: these templates have phony examples around math tests
 
 * Update [Zero Shot](prompt-eng/zero_shot.ipynb)
-* Update [Few Shot](prompt-eng/few_shot.ipynb)
+* Update [Few Shot](prompt-eng/few_shots.ipynb)
 * Update [Prompt Template](prompt-eng/prompt_template.ipynb)
 * Update [Chain-of-Thought](prompt-eng/chain_of_thought.ipynb)
 
