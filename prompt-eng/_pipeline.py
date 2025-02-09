@@ -89,8 +89,11 @@ def create_payload(model, prompt, target="ollama", **kwargs):
             "messages": [ {"role" : "user", "content": prompt } ]
         }
 
-        payload.update({key: value for key, value in kwargs.items()})
+        #payload.update({key: value for key, value in kwargs.items()})
     
+        if kwargs:
+            payload["options"] = {key: value for key, value in kwargs.items()}
+        
     else:
         print(f'!!ERROR!! Unknown target: {target}')
     return payload
@@ -157,7 +160,7 @@ def model_req(payload=None):
 
 if __name__ == "__main__":
     from _pipeline import create_payload, model_req
-    MESSAGE = "1 + 1"
+    MESSAGE = "Why the sky is blue"
     PROMPT = MESSAGE 
     payload = create_payload(
                          target="open-webui",   
@@ -165,7 +168,7 @@ if __name__ == "__main__":
                          prompt=PROMPT, 
                          temperature=1.0, 
                          num_ctx=100, 
-                         num_predict=100)
+                         num_predict=1)
 
     time, response = model_req(payload=payload)
     print(response)
