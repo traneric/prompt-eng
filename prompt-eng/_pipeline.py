@@ -89,7 +89,7 @@ def create_payload(model, prompt, target="ollama", **kwargs):
             "messages": [ {"role" : "user", "content": prompt } ]
         }
 
-        payload.upload({key: value for key, value in kwargs.items()})
+        payload.update({key: value for key, value in kwargs.items()})
     
     else:
         print(f'!!ERROR!! Unknown target: {target}')
@@ -116,7 +116,7 @@ def model_req(payload=None):
     if api_key: headers["Authorization"] = f"Bearer {api_key}"
 
     #print(url, headers)
-    #print(payload)
+    print(payload)
 
     # Send out request to Model Provider
     try:
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     MESSAGE = "1 + 1"
     PROMPT = MESSAGE 
     payload = create_payload(
-                         target="ollama",   
+                         target="open-webui",   
                          model="llama3.2:latest", 
                          prompt=PROMPT, 
                          temperature=1.0, 
