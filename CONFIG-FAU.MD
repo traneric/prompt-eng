@@ -4,12 +4,12 @@
 # Configuring the Prompt Engineering Lab for FAU students
 
 If you ARE NOT a FAU student, go to 
-* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
+* [Configure Lab Environment for General Audience](CONFIG.md)
 
 
 The configuration requires:
 * the **Prompt Engineering Lab**, which provides the simulated GenAI pipeline, and;
-* a **Model Server**, whcih for FAU students can be either a locally installed **Ollama Server** OR use [chat.hpc.fau.edu](https://chat.hpc.fau.edu).
+* a **Model Server**, which for FAU students can be either a locally installed **Ollama Server** OR use [chat.hpc.fau.edu](https://chat.hpc.fau.edu).
 
 You have a more options (than the general public) for this configuration:
 
@@ -33,7 +33,7 @@ For (Option 3) and (Option 4), the installing steps include:
 
 # (Step 1) Downloading **Prompt Engineering Lab** on your computer
 
-This is the same as (Step 2) in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
+This is the same as (Step 2) in [Configure Lab Environment for General Audience](CONFIG.md)
 
 Please follow those instructions!
 
