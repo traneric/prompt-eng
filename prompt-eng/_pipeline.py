@@ -91,9 +91,8 @@ def create_payload(model, prompt, target="ollama", **kwargs):
 
         # @NOTE: Taking not of the syntaxes we tested before; none seems to work so far 
         #payload.update({key: value for key, value in kwargs.items()})
-    
-        if kwargs:
-            payload["options"] = {key: value for key, value in kwargs.items()}
+        #if kwargs:
+        #   payload["options"] = {key: value for key, value in kwargs.items()}
         
     else:
         print(f'!!ERROR!! Unknown target: {target}')
