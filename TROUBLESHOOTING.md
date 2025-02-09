@@ -20,7 +20,7 @@ If your issue is not this list you can:
 
 You missed the step to `install the requirements.txt` while configuring your Lab Environment.
 
-* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
+* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
 
 ```bash
 
@@ -38,7 +38,7 @@ $ python3 prompt-eng/_pipeline.py
 Time taken: -1s
 ```
 
-You have not configured the file `_config` as explained in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
+You have not configured the file `_config` as explained in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
 
 ```bash
 
@@ -67,7 +67,7 @@ Time taken: -1s
 
 The `URL_GENERATE _config` is not pointing to a running Ollama Server (or Ollama Serve is not running!)
 
-Check the explanation in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
+Check the explanation in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
 
 You can test access to Ollama serve as (check if the URL matches what is in you `_config`):
 

@@ -10,8 +10,8 @@ Prompt Engineering has emerged as a critical component in unlocking the full pot
 This lab provides a hands-on learning environment where participants can actively apply their knowledge through Python code, Jupyter notebooks, and practical exercises designed to foster both experimentation and discovery.
 
 Note: first, you need to **Configure your Lab Environment**:
-* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
-* [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG-FAU.MD)
+* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
+* [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG-FAU.md)
 * [Troubleshooting ](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/TROUBLESHOOTING.md)
 
 
@@ -28,7 +28,7 @@ Note: first, you need to **Configure your Lab Environment**:
 
 # Experimenting
 
-Once you have your installation completed (follow [Configure Lab Environment](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)), you can experiment with the out-of-the-box Prompt Engineering techniques being provided above OR create your own experiments by modifying the code in a few points (or creating new code).
+Once you have your installation completed (follow [Configure Lab Environment](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)), you can experiment with the out-of-the-box Prompt Engineering techniques being provided above OR create your own experiments by modifying the code in a few points (or creating new code).
 
 #### (1) Adjust the inbounding  Prompt, simulating inbounding requests from users or other systems
 
