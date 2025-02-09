@@ -5,7 +5,7 @@
 # Configuring the Prompt Engineering Lab
 
 If you are a FAU student, go to 
-* [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG-FAU.MD)
+* [Configure Lab Environment for FAU Students](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG-FAU.md)
 
 
 

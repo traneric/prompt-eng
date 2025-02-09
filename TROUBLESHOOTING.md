@@ -14,6 +14,7 @@ If your issue is not this list you can:
 * report through our DISCORD Server (COT6930_S25), using channel `#dev-support` OR;
 * open an [ISSUE](https://github.com/genilab-fau/prompt-eng/issues)
 
+---
 
 ## ModuleNotFoundError: No module named 'requests'
 
@@ -26,6 +27,8 @@ You missed the step to `install the requirements.txt` while configuring your Lab
 python -m pip install --break-system-packages -r requirements.txt
 
 ```
+
+---
 
 ## ERROR: Problem loading prompt-eng/_config
 
@@ -52,6 +55,8 @@ URL_GENERATE=http://localhost:11434/api/generate
 
 ```
 
+---
+
 ## ERROR: Request failed! You need to adjust prompt-eng/config with URL ...
 
 ```bash
@@ -69,6 +74,8 @@ You can test access to Ollama serve as (check if the URL matches what is in you 
 ```bash 
 curl http://localhost:11434/api/ps
 ```
+
+---
 
 ## ERROR: HTTP Response=404, model 'XXX' not found
 
@@ -113,6 +120,7 @@ Edit _payload.py:
 
 ```
 
+---
 
 ## Response is Empty
 

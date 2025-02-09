@@ -4,7 +4,7 @@
 # Configuring the Prompt Engineering Lab for FAU students
 
 If you ARE NOT a FAU student, go to 
-* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
+* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
 
 
 The configuration requires:
@@ -20,7 +20,7 @@ You have a more options (than the general public) for this configuration:
 
 We recommend using [Visual Code Studio](https://code.visualstudio.com) and installing everything on your computer.
 
-For (Option 1) and (Option 2) follow the same instructions as in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD).
+For (Option 1) and (Option 2) follow the same instructions as in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md).
 
 
 
@@ -33,7 +33,7 @@ For (Option 3) and (Option 4), the installing steps include:
 
 # (Step 1) Downloading **Prompt Engineering Lab** on your computer
 
-This is the same as (Step 2) in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
+This is the same as (Step 2) in [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.md)
 
 Please follow those instructions!
 
