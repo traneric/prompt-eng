@@ -3,13 +3,29 @@
 
 # Frequently Asked Issues
 
-This is a (live) list of Frequenly Asked Issues while installing and configuring the Prompt Engieering Lab in your computer. 
+* [ModuleNotFoundError: No module named 'requests'](#modulenotfounderror-no-module-named-requests)
+* [ERROR: Problem loading prompt-eng/_config](#error-problem-loading-prompt-eng_config)
+* [ERROR: Request failed! You need to adjust prompt-eng/config with URL](#error-request-failed-you-need-to-adjust-prompt-engconfig-with-url)
+* [ERROR: HTTP Response=404, model 'XXX' not found](#error-http-response404-model-xxx-not-found)
+* [Response is Empty](#response-is-empty)
 
-If your issues is not included in this list EITHER:
-* report through our Class Server on DISCORD (COT6930_S25), using channel `#dev-support`, OR;
-* open an [Issue in the main Github Repo](https://github.com/genilab-fau/prompt-eng/issues)
+
+If your issue is not this list you can:
+* report through our DISCORD Server (COT6930_S25), using channel `#dev-support` OR;
+* open an [ISSUE](https://github.com/genilab-fau/prompt-eng/issues)
 
 
+## ModuleNotFoundError: No module named 'requests'
+
+You missed the step to `install the requirements.txt` while configuring your Lab Environment.
+
+* [Configure Lab Environment for General Audience](https://github.com/genilab-fau/prompt-eng/blob/cb2fefa33f5a1c5a927f1246917f73943d3b99ce/CONFIG.MD)
+
+```bash
+
+python -m pip install --break-system-packages -r requirements.txt
+
+```
 
 ## ERROR: Problem loading prompt-eng/_config
 
