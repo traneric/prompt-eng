@@ -4,7 +4,7 @@
 ## _pipeline.py :: Simulated GenAI Pipeline 
 ## 
 #  
-# Copyright (c) 2024 Dr. Fernando Koch, The Generative Intelligence Lab @ FAU
+# Copyright (c) 2025 Dr. Fernando Koch, The Generative Intelligence Lab @ FAU
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
