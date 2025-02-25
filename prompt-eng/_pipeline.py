@@ -160,15 +160,15 @@ def model_req(payload=None):
 
 if __name__ == "__main__":
     from _pipeline import create_payload, model_req
-    MESSAGE = "1+1"
+    MESSAGE = "1 + 1"
     PROMPT = MESSAGE 
     payload = create_payload(
-                         target="ollama",   
+                         target="open-webui",   
                          model="llama3.2:latest", 
                          prompt=PROMPT, 
                          temperature=1.0, 
-                         num_ctx=200, 
-                         num_predict=100)
+                         num_ctx=5555555, 
+                         num_predict=1)
 
     time, response = model_req(payload=payload)
     print(response)
