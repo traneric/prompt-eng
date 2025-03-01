@@ -158,7 +158,7 @@ def model_req(payload=None):
 if __name__ == "__main__":
     from _pipeline import create_payload, model_req
     MESSAGE = "1 + 1"
-    PROMPT = MESSAGE 
+    PROMPT = MESSAGE
     payload = create_payload(
                          target="ollama",   
                          model="llama3.2:latest", 
