@@ -81,7 +81,7 @@ def create_payload(model, prompt, target="ollama", **kwargs):
 
     elif target == "open-webui":
         '''
-        @TODO need to verify the forma for 'parameters' for 'open-webui' is correct.
+        @TODO need to verify the format for 'parameters' for 'open-webui' is correct.
         [Issue 2](https://github.com/genilab-fau/prompt-eng/issues/2)
         '''
         payload = {
@@ -89,8 +89,11 @@ def create_payload(model, prompt, target="ollama", **kwargs):
             "messages": [ {"role" : "user", "content": prompt } ]
         }
 
-        payload.upload({key: value for key, value in kwargs.items()})
-    
+        # @NOTE: Taking not of the syntaxes we tested before; none seems to work so far 
+        #payload.update({key: value for key, value in kwargs.items()})
+        #if kwargs:
+        #   payload["options"] = {key: value for key, value in kwargs.items()}
+        
     else:
         print(f'!!ERROR!! Unknown target: {target}')
     return payload
@@ -116,7 +119,7 @@ def model_req(payload=None):
     if api_key: headers["Authorization"] = f"Bearer {api_key}"
 
     #print(url, headers)
-    #print(payload)
+    print(payload)
 
     # Send out request to Model Provider
     try:
@@ -160,12 +163,12 @@ if __name__ == "__main__":
     MESSAGE = "1 + 1"
     PROMPT = MESSAGE
     payload = create_payload(
-                         target="ollama",   
+                         target="open-webui",   
                          model="llama3.2:latest", 
                          prompt=PROMPT, 
                          temperature=1.0, 
-                         num_ctx=100, 
-                         num_predict=100)
+                         num_ctx=5555555, 
+                         num_predict=1)
 
     time, response = model_req(payload=payload)
     print(response)
